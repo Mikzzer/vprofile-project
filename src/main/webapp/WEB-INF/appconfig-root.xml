@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+  GNU nano 6.2             /home/mwypa/vprofile-project/src/main/webapp/WEB-INF/appconfig-root.xml                      <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns="http://www.springframework.org/schema/beans"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spri>
 
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+                http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-cont>
 
     <import resource="appconfig-mvc.xml"/>
 
@@ -15,6 +15,5 @@
     <!-- Scans within the base package of the application for @Component classes to configure as beans -->
     <context:component-scan base-package="com.visualpathit.account.*"/>
 
-    <context:property-placeholder location="classpath:application.properties"/>
-
+    <context:property-placeholder location="file:/home/application.properties"/>
 </beans>
